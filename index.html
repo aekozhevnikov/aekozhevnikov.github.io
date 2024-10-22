@@ -794,9 +794,6 @@
             function getCarModels() {
                 const selectedBrand = carBrandsSelect.value;
 
-                carModelsSelect.innerHTML = "";
-                carModelsSelect.disabled = true;
-
                 for (let [brand, ...models] of car_values) {
                     if (brand === selectedBrand) {
                         for (let model of models) {
